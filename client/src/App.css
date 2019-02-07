@@ -1,0 +1,20 @@
+.resPath {
+    color:blue;
+}
+.footer{
+    width: 100%;
+}
+
+.resSaving{
+    color:#D4AC0D;
+}
+
+.inputSquare{
+    width: 50px;
+    font-size: 12px;
+}
+
+#buttonSubmit{
+    width: 80px;
+    height: 40px;
+}
