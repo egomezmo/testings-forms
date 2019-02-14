@@ -3,117 +3,80 @@ const db = require("../models");
 
 // This file empties the Books collection and inserts the books below
 
+
 mongoose.connect(
   process.env.MONGODB_URI ||
   "mongodb://localhost/budget"
 );
 
+
 const budgetSeed = [
   {
-    head:"BUDGET",
-    income: 10000,
-    expense: 8800,
-    result: function()
-    {return this.income-this.expense;},
-    date: new Date(Date.now())
+    month: "budget",
+    income: "2000",
+    expense: "800"
   },
   {
-    head:"JAN",
-    income: 10000,
-    expense: 8800,
-    result: function()
-    {return this.income-this.expense;},
-    date: new Date(Date.now())
+    month: "jan",
+    income: "1200",
+    expense: "900"
   },
   {
-    head:"FEB",
-    income: 10000,
-    expense: 8800,
-    result: function()
-    {return this.income-this.expense;},
-    date: new Date(Date.now())
+    month: "feb",
+    income: "1100",
+    expense: "800"
+  }, {
+    month: "mar",
+    income: "1100",
+    expense: "800"
   },
   {
-    head:"MAR",
-    income: 10000,
-    expense: 8800,
-    result: function()
-    {return this.income-this.expense;},
-    date: new Date(Date.now())
+    month: "apr",
+    income: "1100",
+    expense: "800"
   },
   {
-    head:"APR",
-    income: 10000,
-    expense: 8800,
-    result: function()
-    {return this.income-this.expense;},
-    date: new Date(Date.now())
+    month: "may",
+    income: "1100",
+    expense: "800"
   },
   {
-    head:"MAY",
-    income: 10000,
-    expense: 8800,
-    result: function()
-    {return this.income-this.expense;},
-    date: new Date(Date.now())
+    month: "jun",
+    income: "1100",
+    expense: "800"
   },
   {
-    head:"JUN",
-    income: 10000,
-    expense: 8800,
-    result: function()
-    {return this.income-this.expense;},
-    date: new Date(Date.now())
+    month: "jul",
+    income: "1100",
+    expense: "800"
   },
   {
-    head:"JUL",
-    income: 10000,
-    expense: 8800,
-    result: function()
-    {return this.income-this.expense;},
-    date: new Date(Date.now())
+    month: "ago",
+    income: "1100",
+    expense: "800"
   },
   {
-    head:"AGO",
-    income: 10000,
-    expense: 8800,
-    result: function()
-    {return this.income-this.expense;},
-    date: new Date(Date.now())
+    month: "sep",
+    income: "1100",
+    expense: "800"
   },
   {
-    head:"SEP",
-    income: 10000,
-    expense: 8800,
-    result: function()
-    {return this.income-this.expense;},
-    date: new Date(Date.now())
+    month: "oct",
+    income: "1100",
+    expense: "800"
   },
   {
-    head:"OCT",
-    income: 10000,
-    expense: 8800,
-    result: function()
-    {return this.income-this.expense;},
-    date: new Date(Date.now())
+    month: "nov",
+    income: "1100",
+    expense: "800"
   },
   {
-    head:"NOV",
-    income: 10000,
-    expense: 8800,
-    result: function()
-    {return this.income-this.expense;},
-    date: new Date(Date.now())
-  },
-  {
-    head:"DIC",
-    income: 10000,
-    expense: 8800,
-    result: function()
-    {return this.income-this.expense;},
-    date: new Date(Date.now())
+    month: "dec",
+    income: "1100",
+    expense: "200"
   }
 ];
+
 
 db.Budget
   .remove({})

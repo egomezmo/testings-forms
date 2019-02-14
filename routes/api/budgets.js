@@ -4,11 +4,11 @@ const Controller = require("../../controllers/Controller");
 // Matches with "/api/books"
 router.route("/")
   .get(Controller.findAll)
-  .post(Controller.create);
+  .put(Controller.update);
+
 
 // Matches with "/api/books/:id"
-router
-  .route("/:id")
+router.route("/:id")
   .get(Controller.findById)
   .put(Controller.update)
   .delete(Controller.remove);

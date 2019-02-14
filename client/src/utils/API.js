@@ -1,24 +1,16 @@
 import axios from "axios";
+//import { request } from "http";
 
 export default {
-  // Gets all budget
 
-  
-  getBudget: function() {
+  getBudget: function () {                  // Gets all budget
     return axios.get("/api/budgets");
   },
 
-  
-  // Gets the budget with the given id
-  getBudgets: function(id) {
-    return axios.get("/api/budgets/" + id);
-  },
-  // Deletes the book with the given id
-  deleteBudget: function(id) {
-    return axios.delete("/api/budgets/" + id);
-  },
-  // Saves a book to the database
-  saveBudget: function(bookData) {
-    return axios.post("/api/budgets", bookData);
+  updateBudget: function (res) {                 // update all cnages
+    console.log(res)
+    return axios.put("/api/budgets",res);
+    // axios.put(url[, data[, config]])
   }
+
 };
