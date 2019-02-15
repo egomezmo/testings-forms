@@ -11,7 +11,7 @@ General information about get in a good shape in personal finances.
 ### TOOL
 Form with inputs to keep track of a general income and expenses and see a graph, that changes in real time, of budget in a yearly example.
 
-#### FUTURE DESIRABLE CHARACTERISTICS:
+### FUTURE DESIRABLE CHARACTERISTICS:
 * Develop a detail table of incomes and expenses.
 * Take the table to a pdf format. 
 
